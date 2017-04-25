@@ -1,0 +1,350 @@
+// something wrapped in a circle
+[bubble-wrap] {
+  border-radius: 50%;
+  border: solid 3px;
+  margin-bottom: 20px;
+  text-align: center !important;
+  padding: 40px;
+  position: relative;
+  [icon] {
+    display: inline;
+    position: absolute;
+  }
+}
+
+@media all and (min-width:$breakpoint-laptop) {
+  [bubble-wrap] {
+    width: 55px;
+    height: 55px;
+    [icon] {
+      font-size: 4.5rem;
+      top: 32px;
+      left: 32px;
+    }
+  }
+}
+@media all and (max-width:$breakpoint-laptop) and (min-width:$breakpoint-tablet){
+  [bubble-wrap] {
+    width: 45px;
+    height: 45px;
+    [icon] {
+      font-size: 4rem;
+      top: 30px;
+      left: 30px;
+    }
+  }
+}
+@media all and (max-width:$breakpoint-tablet) and (min-width:$breakpoint-mobile-medium){
+  [bubble-wrap] {
+    width: 45px;
+    height: 45px;
+    [icon] {
+      font-size: 4rem;
+      top: 30px;
+      left: 30px;
+    }
+  }
+}
+@media all and (min-width:$breakpoint-mobile-medium) and (max-width:$breakpoint-mobile-large) {
+  [bubble-wrap] {
+    width: 55px;
+    height: 55px;
+    [icon] {
+      font-size: 4.5rem;
+      top: 32px;
+      left: 32px;
+    }
+  }
+}
+@media all and (max-width:$breakpoint-mobile-medium) {
+  [bubble-wrap] {
+    width: 45px;
+    height: 45px;
+    [icon] {
+      font-size: 4rem;
+      top: 30px;
+      left: 30px;
+    }
+  }
+}
+
+[content] {
+  position: relative;
+  margin-bottom: 20px;
+  a {
+    position: absolute;
+    bottom: 2px;
+  }
+}
+
+[bubble-wrap~="service"] {
+  color: $primarycolor;
+  border-color: $primarycolor;
+}
+
+// Page sections/
+[page-section] {
+  .column {
+    vertical-align: middle;
+    @media all and (min-width:$breakpoint-laptop-large) {
+      p{
+        margin: 0 300px 20px 300px;
+        text-align: center;
+      }
+    }
+    @media all and (max-width:$breakpoint-laptop-large) and (min-width:$breakpoint-betweentab-and-lap) {
+      p{
+        margin: 10px 200px 20px 200px;
+      }
+    }
+    @media all and (max-width:$breakpoint-betweentab-and-lap) and (min-width: $breakpoint-mobile-large){
+      p {
+        margin: 10px 55px 10px 55px;
+        text-align:left;
+      }
+    }
+  }
+  h2 {
+   color: $secondarycolor;
+  }
+  h3 {
+    color: $default;
+  }
+  p {
+    color: $default;
+  }
+  @media all and (min-width:$breakpoint-laptop-large) {
+    p{
+      margin: 20px 300px 20px 300px;
+    }
+  }
+    @media all and (max-width:$breakpoint-laptop-large) {
+      p {
+        margin: 15px 55px 15px 55px;
+      }
+  }
+}
+
+
+
+[page-section~="no-heropage"] {
+    @media all and (min-width:$breakpoint-tablet) {
+      padding: 200px 0 200px 0;
+    }
+    @media all and (max-width:$breakpoint-tablet) and (min-width:$breakpoint-mobile-large) {
+      padding: 100px 0 100px 0;
+    }
+    @media all and (max-width:$breakpoint-mobile-large) {
+      padding: 50px 0 0 0;
+    }
+}
+
+[page-section~="left"] {
+  .row {
+    align-content: center;
+    justify-content: space-around;
+  }
+  h2 {
+   color: $secondarycolor;
+  }
+  h3 {
+    color: $default;
+  }
+  p {
+    color: $contentcolor-dark;
+  }
+  .background {
+    .row {
+      justify-content: space-between;
+    }
+    h2.trafalgar {
+      text-align: left;
+    }
+    background-size:cover;
+    background-repeat: no-repeat;
+      background-image: inherit;
+    @media all and (min-width:$breakpoint-laptop) {
+      background-position: center center;
+      p {
+        max-width: 55%
+      }
+    }
+    @media all and (max-width:$breakpoint-laptop) and (min-width:$breakpoint-tablet) {
+      background-position: center center;
+      p {
+        max-width: 65%
+      }
+    }
+    @media all and (max-width:$breakpoint-tablet) and (min-width:$breakpoint-mobile-large) {
+      background-position: center center;
+      p {
+        max-width: 65%
+      }
+    }
+    @media all and (max-width:$breakpoint-mobile-large) {
+      background-position: center left;
+    }
+  }
+  .soft {
+    background-color: $soft;
+    h2 {
+      color: $contentcolor-lite;
+    }
+    h3 {
+      color: $contentcolor-lite;
+    }
+    p {
+      color: $contentcolor-lite;
+    }
+  }
+}
+
+[page-section~="right"] {
+  .row {
+    align-content: center;
+    justify-content: space-around;
+  }
+  h2 {
+   color: $secondarycolor;
+  }
+  h3 {
+    color: $default;
+  }
+  p {
+    color: $contentcolor-dark;
+  }
+}
+
+[info-card] {
+  text-align: left;
+  align-self: flex-start;
+   p {
+     margin: 15px 0 10px 0;
+   }
+   .with-row {
+     @media all and (min-width:$breakpoint-laptop) {
+       max-width: 500px;
+      }
+      @media all and (max-width:$breakpoint-laptop) and (min-width:$breakpoint-betweentab-and-lap){
+        max-width: 375px;
+       }
+      @media all and (max-width:$breakpoint-betweentab-and-lap) and (min-width:$breakpoint-tablet){
+        max-width: 300px;
+       }
+       @media all and (max-width:$breakpoint-tablet) {
+         max-width: 275px;
+       }
+   }
+  img.with-row {
+    margin-top: 25px;
+    @media all and (min-width:$breakpoint-laptop) {
+      max-width: 400px;
+     }
+     @media all and (max-width:$breakpoint-laptop) and (min-width:$breakpoint-betweentab-and-lap){
+       max-width: 375px;
+      }
+     @media all and (max-width:$breakpoint-betweentab-and-lap) and (min-width:$breakpoint-tablet){
+       max-width: 300px;
+      }
+      @media all and (max-width:$breakpoint-tablet) {
+        max-width: 275px;
+      }
+  }
+}
+[list~="paired-icon"] {
+  .with-row {
+    max-width: 700px;
+  }
+  .row {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    @media all and (max-width:$breakpoint-betweentab-and-lap) {
+        justify-content: center;
+    }
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-content: space-between;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  h2.double-pica {
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+  }
+
+  h2 {
+  color: $primarycolor;
+    }
+  ul {
+    list-style-type: none;
+    // background-repeat: no-repeat;
+    // position: center center;
+  }
+  ul> :nth-child(1n) {
+    color: $primarycolor;
+  }
+  ul> :nth-child(2n) {
+    color: $secondarycolor;
+  }
+  ul> :nth-child(3n) {
+    color: $smooth;
+  }
+  ul> :nth-child(4n) {
+    color: $soft;
+  }
+  li {
+    background-color: $contentcolor-lite;
+    @media all and (max-width:$breakpoint-laptop) and (min-width:$breakpoint-tablet){
+      width: 145px;
+      height: 125px;
+      font-size: 2rem;
+      span {
+        font-size: 1rem;
+      }
+     }
+    font-size: 2.5rem;
+    width: 175px;
+    height: 120px;
+    padding: 20px 10px 10px 10px;
+    margin: 10px 5px 10px 5px;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.05);
+    box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.05);
+
+    span.long-primer {
+      color: $default;
+      display: block;
+      margin-top: 20px;
+    }
+  }
+  .inverted {
+    h2, li {
+    color: $secondarycolor;
+    }
+  }
+}
+
+[info-card~="breathe"] {
+  @media all and (min-width:$breakpoint-betweentab-and-lap) {
+  padding: 50px 20px 20px 20px;
+  }
+  @media all and (max-width:$breakpoint-betweentab-and-lap) {
+  padding: 20px 0 20px 10;
+  }
+}
+[info-card~="inverted"] {
+  background-color: $contentcolor-lite;
+}

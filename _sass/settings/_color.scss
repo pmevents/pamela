@@ -1,0 +1,24 @@
+// $primarycolor: #B4C8BD;
+$primarycolor: #8ac4c8;
+$contentcolor-dark: #555555;
+$default: #797979;
+$contentcolor-lite: #ffffff;
+$secondarycolor: #E08481;
+$bland-lite: #ecf0f1;
+// greynice
+$smooth: #C5B6B3;
+// lavender
+$soft: #B8B6C6;
+
+.secondarycolor {
+  color: $secondarycolor;
+}
+.default {
+  color: $default;
+}
+.invert {
+  color: $contentcolor-lite;
+}
+.differentiate {
+  color: $soft;
+}

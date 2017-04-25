@@ -1,0 +1,36 @@
+<section id="{{ include.anchor }}" style="background-color: #fdfdfd;">
+    <div page-section="{{ include.style }}">
+      <div class="{{ include.section-class }} container" style="background-image: url('/images/backgrounds/{{ include.bg-image }}')">
+        <h2 class="trafalgar editable text-center">{{ include.title }}</h2>
+        <!-- row -->
+        <div class="{{ include.layout }}">
+          <!-- text with picture info -->
+          <div info-card="{{ include.info-card-type }}" class="{{ include.card-style }}">
+            <p class="long-primer editable">{{ include.lead-in }}</p>
+            <p class="long-primer editable">{{ include.description }}</p>
+            {% if include.list == 'list5' %}
+              <div list="{{ include.list-type }}" class="editable">
+                <h2 class="double-pica editable">Event Management For:</h2>
+                <ul class="default">
+                  <li class="long-primer">Rehearsal Dinner</li>
+                  <li class="long-primer">Welcome Party</li>
+                  <li class="long-primer">Bridal Luncheon</li>
+                  <li class="long-primer">Brunch</li>
+                </ul>
+              </div>
+            {% endif %}
+            {% if include.feature-img == 'true' %}
+            <img src="/images/service-images/{{ include.feature-image }}" class="editable {{ include.card-style }}">
+            {% endif %}
+          </div>
+          <!-- end text with picture info -->
+          <!-- bullet list of services package -->
+          {% if include.list_dominant == 'true' %}
+            {% include services-list.html %}
+          {% endif %}
+          <!-- end bullet list of services package -->
+        </div>
+        <!-- end row -->
+      </div>
+    </div>
+</section>

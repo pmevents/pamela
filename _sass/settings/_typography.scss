@@ -1,0 +1,213 @@
+h1.canon {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 5px;
+  color: inherit;
+  @media all and (min-width:$breakpoint-laptop-large){
+    font-size: 56px;
+    line-height:52px;
+  }
+  @media all and (min-width:$breakpoint-laptop) and (max-width:$breakpoint-laptop-large){
+    font-size: 44px;
+    line-height:48px;
+  }
+  @media all and (min-width:$breakpoint-tablet) and (max-width:$breakpoint-laptop){
+    font-size: 44px;
+    line-height:48px;
+  }
+  @media all and (min-width:$breakpoint-mobile-large) and (max-width:$breakpoint-tablet){
+    font-size: 32px;
+    line-height: 36px;
+  }
+  @media all and (min-width:$breakpoint-mobile-medium) and (max-width:$breakpoint-mobile-large){
+    font-size: 32px;
+    line-height: 36px;
+  }
+  @media all and (min-width:$breakpoint-mobile-small) and (max-width:$breakpoint-mobile-medium){
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+// Section heading (h2 for section headings)
+h2.trafalgar {
+  font-family: 'Cinzel', serif;
+  color: inherit;
+    letter-spacing: 2px;
+  margin-bottom: 15px;
+  @media all and (min-width:$breakpoint-laptop-large){
+    font-size: 40px;
+    line-height:44px;
+  }
+  @media all and (min-width:$breakpoint-laptop) and (max-width:$breakpoint-laptop-large){
+    font-size: 36px;
+    line-height:40px;
+  }
+  @media all and (min-width:$breakpoint-tablet) and (max-width:$breakpoint-laptop){
+    font-size: 32px;
+    line-height:46px;
+  }
+  @media all and (min-width:$breakpoint-mobile-large) and (max-width:$breakpoint-tablet){
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @media all and (min-width:$breakpoint-mobile-medium) and (max-width:$breakpoint-mobile-large){
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @media all and (min-width:$breakpoint-mobile-small) and (max-width:$breakpoint-mobile-medium){
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+// subheadings (h2 under sections)
+h2.double-pica {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  color: inherit;
+  @media all and (min-width:$breakpoint-laptop-large){
+    font-size: 26px;
+    line-height:30px;
+  }
+  @media all and (min-width:$breakpoint-laptop) and (max-width:$breakpoint-laptop-large){
+    font-size: 24px;
+    line-height:28px;
+  }
+  @media all and (min-width:$breakpoint-tablet) and (max-width:$breakpoint-laptop){
+    font-size: 24px;
+    line-height:28px;
+  }
+  @media all and (min-width:$breakpoint-mobile-large) and (max-width:$breakpoint-tablet){
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media all and (min-width:$breakpoint-mobile-medium) and (max-width:$breakpoint-mobile-large){
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media all and (min-width:$breakpoint-mobile-small) and (max-width:$breakpoint-mobile-medium){
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+// subheadings (similar to h3)
+h3.great-primer {
+  font-family: 'Raleway', sans-serif;
+  color: inherit;
+  font-weight: 200;
+  @media all and (min-width:$breakpoint-laptop-large){
+    font-size: 21px;
+    line-height:24px;
+  }
+  @media all and (min-width:$breakpoint-laptop) and (max-width:$breakpoint-laptop-large){
+    font-size: 20px;
+    line-height:24px;
+  }
+  @media all and (min-width:$breakpoint-tablet) and (max-width:$breakpoint-laptop){
+    font-size: 18px;
+    line-height:22px;
+  }
+  @media all and (min-width:$breakpoint-mobile-large) and (max-width:$breakpoint-tablet){
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media all and (min-width:$breakpoint-mobile-medium) and (max-width:$breakpoint-mobile-large){
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media all and (min-width:$breakpoint-mobile-small) and (max-width:$breakpoint-mobile-medium){
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+// index links, navigation bar etc (similar to h4)
+h4.pica, li.pica, a.pica {
+  font-family: 'Cinzel', serif;
+  color: inherit;
+  letter-spacing: 2px;
+  @media all and (min-width:$breakpoint-laptop-large){
+    font-size: 18px;
+    line-height:22px;
+  }
+  @media all and (min-width:$breakpoint-laptop) and (max-width:$breakpoint-laptop-large){
+    font-size: 16px;
+    line-height:20px;
+  }
+  @media all and (min-width:$breakpoint-tablet) and (max-width:$breakpoint-laptop){
+    font-size: 16px;
+    line-height:20px;
+  }
+  @media all and (min-width:$breakpoint-mobile-large) and (max-width:$breakpoint-tablet){
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media all and (min-width:$breakpoint-mobile-medium) and (max-width:$breakpoint-mobile-large){
+    font-size: 16px;
+    line-height: 20px;
+  }
+  @media all and (min-width:$breakpoint-mobile-small) and (max-width:$breakpoint-mobile-medium){
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+// body
+p.long-primer, li.long-primer, span.long-primer{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: inherit;
+    font-weight: 300;
+  @media all and (min-width:$breakpoint-laptop-large){
+    font-size: 18px;
+    line-height:22px;
+  }
+  @media all and (min-width:$breakpoint-laptop) and (max-width:$breakpoint-laptop-large){
+    font-size: 18px;
+    line-height:22px;
+  }
+  @media all and (min-width:$breakpoint-tablet) and (max-width:$breakpoint-laptop){
+    font-size: 18px;
+    line-height:22px;
+  }
+  @media all and (min-width:$breakpoint-mobile-large) and (max-width:$breakpoint-tablet){
+    font-size: 16px;
+    line-height: 19px;
+  }
+  @media all and (min-width:$breakpoint-mobile-medium) and (max-width:$breakpoint-mobile-large){
+    font-size: 16px;
+    line-height: 19px;
+  }
+  @media all and (min-width:$breakpoint-mobile-small) and (max-width:$breakpoint-mobile-medium){
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.logo {
+    font-family: 'Tangerine', cursive;
+    color: $contentcolor-dark;
+    margin: 0;
+    @media all and (min-width:$breakpoint-laptop) {
+      font-size: 2.2rem;
+    }
+    @media all and (max-width:$breakpoint-laptop) and (min-width:$breakpoint-mobile-large){
+      font-size: 2rem;
+    }
+    @media all and (max-width:$breakpoint-mobile-large) {
+      font-size: 1.5rem;
+    }
+}
+h1, h2, h3, h4, p {
+    display: block;
+    font-size: inherit;
+    -webkit-margin-before: inherit;
+    -webkit-margin-after: inherit;
+    -webkit-margin-start: inherit;
+    -webkit-margin-end: inherit;
+    font-weight: bold;
+}
